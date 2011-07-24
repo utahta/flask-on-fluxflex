@@ -1,0 +1,10 @@
+.DS_Store
+._src.crx
+.project
+.pydevproject
+.settings
+.tmp_*
+*.pyc
+dist
+__pycache__
+*.swp

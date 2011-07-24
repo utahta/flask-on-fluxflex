@@ -1,0 +1,14 @@
+[replace]
+app/settings.py FLX_DB_NAME PROJECT_NAME
+app/settings.py FLX_DB_USER DB_USER
+app/settings.py FLX_DB_PASS DB_PASSWORD
+app/settings.py FLX_DB_HOST DB_HOST
+public_html/dispatch.fcgi FLX_PROJECT_NAME PROJECT_NAME
+
+[setup]
+pip install -r req.txt -I --install-option="--user"
+/usr/bin/env python initdb.py
+
+[deploy]
+pip install -r req.txt -I --install-option="--user"
+
